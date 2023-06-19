@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9e0d4;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.mbti {
+    background-color: rgba(100, 100, 100, 0.1);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.name {
+    margin: 12px 0 5px;
+    letter-spacing: 1px;
+    color: #1f1d1d;
+}
+
+.group {
+    color: rgba(31, 29, 29, 0.5);
+}
+
+/* sentinels style [blue] */
+.card.ESFJ,
+.card.ISFJ,
+.card.ESTJ,
+.card.ISTJ {
+    background-color: #c4e0e0;
+}
+
+.mbti.ESFJ,
+.mbti.ISFJ,
+.mbti.ESTJ,
+.mbti.ISTJ {
+    color: #2f5859;
+}
+
+/* explorers style [yellow] */
+.card.ESTP,
+.card.ISTP,
+.card.ESFP,
+.card.ISFP {
+    background-color: #f6ebbb;
+}
+
+.mbti.ESTP,
+.mbti.ISTP,
+.mbti.ESFP,
+.mbti.ISFP {
+    color: #685a11;
+}
+
+/* diplomat style [green] */
+.card.ENFP,
+.card.INFP,
+.card.ENFJ,
+.card.INFJ {
+    background-color: #ced6c5;
+}
+
+.mbti.ENFP,
+.mbti.INFP,
+.mbti.ENFJ,
+.mbti.INFJ {
+    color: #2f3d22;
+}
+
+/* analyst style [purple] */
+.card.ENTJ,
+.card.INTJ,
+.card.ENTP,
+.card.INTP {
+    background-color: #cec2c8;
+}
+
+.mbti.ENTJ,
+.mbti.INTJ,
+.mbti.ENTP,
+.mbti.INTP {
+    color: #524c4f;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* footer style */
+footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 12px;
+    letter-spacing: 1.1;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    text-align: center;
+    color: #1f1d1d;
+}
+
+footer p:first-child {
+    color: #1f1d1d;
+    margin-right: 10px;
+    opacity: 0.5;
+}
