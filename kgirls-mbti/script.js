@@ -17,7 +17,9 @@ function generateListItems(artist) {
         <div class="card ${artist[i][1]} animate__animated animate__zoomIn animate__faster	600ms">
             <img src="${artist[i][3]}">
             <div class="info">
-                <span class="mbti ${artist[i][1]}">${artist[i][1]}</span>
+                <span class="mbti ${artist[i][1]}">
+                ${artist[i][1]}
+                </span>
                 <h3 class="name">${artist[i][0]}</h3>
                 <small class="group">${artist[i][2]}</small>
             </div>
@@ -28,5 +30,5 @@ function generateListItems(artist) {
 }
 
 document.querySelector("main").innerHTML = `
-<div class="container">${generateListItems(artists)}<div>
+<div class="container">${generateListItems(artists)}</div>
 `;
